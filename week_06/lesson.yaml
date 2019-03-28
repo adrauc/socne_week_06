@@ -170,9 +170,6 @@
   Output: The next topic that you should learn about regular expressions has to do with metacharacters. As you just learned, the most basic type of regular expressions are the literal characters which are characters that match themselves. However, not all characters match themselves. Any character that is not a literal character is a metacharacter. 
 
 - Class: text
-  Output: The next topic that you should learn about regular expressions has to do with metacharacters. As you just learned, the most basic type of regular expressions are the literal characters which are characters that match themselves. However, not all characters match themselves. Any character that is not a literal character is a metacharacter. 
-
-- Class: text
   Output: Here are all metacharacters .   \   |   (   )   [   ]   {   }   $   -    ^   *   +   ?
  
 - Class: text
@@ -184,7 +181,7 @@
 - Class: cmd_question
   Output: First create a new character vector not <- c("not", "note", "knot", "nut")
   CorrectAnswer: not <- c("not", "note", "knot", "nut")
-  AnswerTests: omnitest(correctExpr='not <- c("not", "note", "knot", "nut"))')
+  AnswerTests: omnitest(correctExpr='not <- c("not", "note", "knot", "nut")')
   Hint: Just type not <- c("not", "note", "knot", "nut")
 
 - Class: cmd_question
