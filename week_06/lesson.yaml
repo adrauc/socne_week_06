@@ -122,7 +122,7 @@
   Output: A regular expression is a special text string for describing a certain amount of text. This “certain amount of text” receives the formal name of pattern. In other words, a regular expression is a set of symbols that describes a text pattern. More formally we say that a regular expression is a pattern that describes a set of strings. 
 
 - Class: text
-  Output: In addition to this first meaning, the term regular expression can also be used in a slightly different but related way: as the formal language of these symbols that needs to be interpreted by a regular expression processor. Because the term “regular expression” is rather long, most people use the word regex as a shortcut term.    
+  Output: In addition to this first meaning, the term regular expression can also be used in a slightly different but related way - as the formal language of these symbols that needs to be interpreted by a regular expression processor. Because the term “regular expression” is rather long, most people use the word regex as a shortcut term.    
 
 - Class: text
   Output: So how are we going to use regex patterns? In the case of a phone number, that pattern might be three digits followed by a dash, followed by three digits and another dash, followed by four digits. Once you have defined a pattern then the regex processor will use our description to return matching results, or in the case of the test, to return true or false for whether or not it matched.
