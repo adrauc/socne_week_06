@@ -228,10 +228,10 @@
     
   
 - Class: cmd_question
-  Output: Create the following vector pnx <- c('pan', 'pen', 'pin', 'p0n', 'p.n', 'p1n', 'paun')
+  Output: Create the following vector pnx <- c("pan", "pen", "pin", "p0n", "p.n", "p1n", "paun")
   CorrectAnswer: pnx <- c('pan', 'pen', 'pin', 'p0n', 'p.n', 'p1n', 'paun')
   AnswerTests: omnitest(correctExpr='pnx <- c("pan", "pen", "pin", "p0n", "p.n", "p1n", "paun")')
-  Hint: Just type pnx <- c('pan', 'pen', 'pin', 'p0n', 'p.n', 'p1n', 'paun')
+  Hint: Just type pnx <- c("pan", "pen", "pin", "p0n", "p.n", "p1n", "paun")
 
 - Class: cmd_question
   Output: Now use as string pnx and as pattern "p[aeiou]n" in str_view()
@@ -246,10 +246,10 @@
   Output: If you want to match all numbers or all capital letters, you can use character ranges.
 
 - Class: cmd_question
-  Output: Create the vector triplets <- c('123', 'abc', 'ABC', ':-)')
+  Output: Create the vector triplets <- c("123", "abc", "ABC", ":-)")
   CorrectAnswer: triplets <- c('123', 'abc', 'ABC', ':-)')
-  AnswerTests: omnitest(correctExpr='triplets <- c('123', 'abc', 'ABC', ':-)')')
-  Hint: Type triplets <- c('123', 'abc', 'ABC', ':-)')
+  AnswerTests: omnitest(correctExpr='triplets <- c("123", "abc", "ABC", ":-)")')
+  Hint: Type triplets <- c("123", "abc", "ABC", ":-)")
 
 - Class: cmd_question
   Output: Let's try the first range with numbers str_view(triplets, "[0-9]")
