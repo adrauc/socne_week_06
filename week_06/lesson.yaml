@@ -217,7 +217,7 @@
 - Class: cmd_question
   Output: Let's try this use str_view() with fives and "5.00". But add the escape character to "5.00" in order to escape the metacharacter .
   CorrectAnswer: str_view(fives, "5\\.00")
-  AnswerTests: omnitest(correctExpr='str_view(fives, "5\\.00")')
+  AnswerTests: omnitest(correctExpr='str_view(fives, "5\\\.00")')
   Hint: We want to escape the metacharacter . Add \\ before . in the pattern.
   
 - Class: text
