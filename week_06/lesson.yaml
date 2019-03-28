@@ -230,7 +230,7 @@
 - Class: cmd_question
   Output: Create the following vector pnx <- c('pan', 'pen', 'pin', 'p0n', 'p.n', 'p1n', 'paun')
   CorrectAnswer: pnx <- c('pan', 'pen', 'pin', 'p0n', 'p.n', 'p1n', 'paun')
-  AnswerTests: omnitest(correctExpr='pnx <- c('pan', 'pen', 'pin', 'p0n', 'p.n', 'p1n', 'paun')')
+  AnswerTests: omnitest(correctExpr='pnx <- c("pan", "pen", "pin", "p0n", "p.n", "p1n", "paun")')
   Hint: Just type pnx <- c('pan', 'pen', 'pin', 'p0n', 'p.n', 'p1n', 'paun')
 
 - Class: cmd_question
@@ -296,7 +296,7 @@
 - Class: cmd_question
   Output: We are now using "{n}". This means that the preceding item is matched exactly n times. Now try "\\w+" as pattern which matches a word character
   CorrectAnswer: str_view(triplets, "\\w+")
-  AnswerTests: omnitest(correctExpr='str_view(triplets, "\\w+")')
+  AnswerTests: omnitest(correctExpr='str_view(triplets, "\\\\w+")')
   Hint: Type str_view(triplets, "\\w+")
 
 - Class: text
@@ -305,7 +305,7 @@
 - Class: cmd_question
   Output: Let's extract hashtags with "#\\w+". We want the hashtag sign followed at least by one word character. Try this with str_extract. Subset the column text with $ and use as second argument the pattern.  
   CorrectAnswer: str_extract(clinton_tweets$text, "#\\w+")
-  AnswerTests: omnitest(correctExpr='str_extract(clinton_tweets$text, "#\\w+")')
+  AnswerTests: omnitest(correctExpr='str_extract(clinton_tweets$text, "#\\\\w+")')
   Hint: Type str_extract(clinton_tweets$text, "#\\w+")
 
 - Class: text
@@ -314,7 +314,7 @@
 - Class: cmd_question
   Output: Try exactly the same arguments but this time with the function str_extract_all()
   CorrectAnswer: str_extract_all(clinton_tweets$text, "#\\w+")
-  AnswerTests: omnitest(correctExpr='str_extract_all(clinton_tweets$text, "#\\w+")')
+  AnswerTests: omnitest(correctExpr='str_extract_all(clinton_tweets$text, "#\\\\w+")')
   Hint: Type str_extract_all(clinton_tweets$text, "#\\w+")
 
 - Class: text
@@ -323,7 +323,7 @@
 - Class: cmd_question
   Output: Try again the same function but now put it inside of unlist()
   CorrectAnswer: unlist(str_extract_all(clinton_tweets$text, "#\\w+"))
-  AnswerTests: omnitest(correctExpr='unlist(str_extract_all(clinton_tweets$text, "#\\w+"))')
+  AnswerTests: omnitest(correctExpr='unlist(str_extract_all(clinton_tweets$text, "#\\\\w+"))')
   Hint: Type unlist(str_extract_all(clinton_tweets$text, "#\\w+")) 
   
 - Class: text
@@ -344,13 +344,13 @@
 - Class: cmd_question
   Output: This tweet has four users receiving the reply (the first four usernames at the beginning) and one mention (@HillaryClinton) in the middle of the tweet. Try now str_extract_all(single_tweet, "@\\w+")
   CorrectAnswer: str_extract_all(single_tweet, "@\\w+")
-  AnswerTests: omnitest(correctExpr='str_extract_all(single_tweet, "@\\w+")')
+  AnswerTests: omnitest(correctExpr='str_extract_all(single_tweet, "@\\\\w+")')
   Hint: Type str_extract_all(single_tweet, "@\\w+")
 
 - Class: cmd_question
   Output: As you can see - we extract all and cannot distinguish between mention and reply anymore. Therefore we could use "(@\\w+ )+" with str_extract(). Try it!
   CorrectAnswer: str_extract(single_tweet, "(@\\w+ )+" )
-  AnswerTests: omnitest(correctExpr='str_extract(single_tweet, "(@\\w+ )+")')
+  AnswerTests: omnitest(correctExpr='str_extract(single_tweet, "(@\\\\w+ )+")')
   Hint: Type str_extract(single_tweet, "(@\\w+ )+")
 
 - Class: text
@@ -359,7 +359,7 @@
 - Class: cmd_question
   Output: Use the exact same code again and save the result in usernames
   CorrectAnswer:  usernames <- str_extract(single_tweet, "(@\\w+ )+")
-  AnswerTests: omnitest(correctExpr='usernames <- str_extract(single_tweet, "(@\\w+ )+")')
+  AnswerTests: omnitest(correctExpr='usernames <- str_extract(single_tweet, "(@\\\\w+ )+")')
   Hint: Type usernames <- str_extract(single_tweet, "(@\\w+ )+")
   
 - Class: cmd_question
