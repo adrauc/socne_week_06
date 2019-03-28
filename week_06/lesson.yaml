@@ -297,7 +297,7 @@
   Hint: Type str_view(triplets, "[A-Z]{2}")
 
 - Class: cmd_question
-  Output: {n} means that the preceding item is matched exactly n times. Now try "\\w+" as pattern which matches a word character
+  Output: We are now using "{n}". This means that the preceding item is matched exactly n times. Now try "\\w+" as pattern which matches a word character
   CorrectAnswer: str_view(triplets, "\\w+")
   AnswerTests: omnitest(correctExpr='str_view(triplets, "\\w+")')
   Hint: Type str_view(triplets, "\\w+")
