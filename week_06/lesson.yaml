@@ -318,7 +318,7 @@
   Hint: Type str_extract_all(clinton_tweets$text, "#\\w+")
 
 - Class: text
-  Output: Scroll up a little in the console, now we have sometimes more than just one tweet. You also see [[]] - this means we have now a list.
+  Output: Scroll up a little in the console, now we have sometimes more than just one hashtag. You also see [[]] - this means we have now a list.
   
 - Class: cmd_question
   Output: Try again the same function but now put it inside of unlist()
@@ -384,4 +384,7 @@
   Output: Great job! Now you also have a list as you can see. You should use unlist in order to collapse the list and to create one vector. 
   
 - Class: text
-  Output: That's it for today!
+  Output: If you want to use that method - first filter the tweets - keep only the replies and then use the regex pattern on these filtered replies. You can use !is.na() with the column reply_to_status_id for example.
+  
+- Class: text
+  Output: That's it for today! We will cover more text mining in the second half of the semester.
