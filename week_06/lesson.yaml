@@ -35,10 +35,10 @@
   Hint: Just type paste("The number pi is", pi, sep = "-")
 
 - Class: cmd_question
-  Output: If you give paste() objects of different length, then it will apply a recycling rule. paste a single character "X" with the sequence 1:5, and separator sep = "_" and see what happens. 
-  CorrectAnswer: paste("X", 1:5, sep = "_")
-  AnswerTests: omnitest(correctExpr='paste("X", 1:5, sep = "_")')
-  Hint: Just type paste("X", 1:5, sep = "_")
+  Output: If you give paste() objects of different length, then it will apply a recycling rule. paste a single character "x" with the sequence 1:5, and separator sep = "_" and see what happens. 
+  CorrectAnswer: paste("x", 1:5, sep = "_")
+  AnswerTests: omnitest(correctExpr='paste("x", 1:5, sep = "_")')
+  Hint: Just type paste("x", 1:5, sep = "_")
 
 - Class: cmd_question
   Output: Use the same code but also add this time collapse = "" as last argument and see what happens. 
@@ -47,12 +47,12 @@
   Hint: Just type paste("X", 1:5, sep = "_", collapse = "")
 
 - Class: text
-  Output: In addition to paste(), there’s also the function paste0() which is the equivalent of paste(..., sep = "", collapse)
+  Output: As you can see, all the single strings were collapsed into on single string. In addition to paste(), there’s also the function paste0() which is the equivalent of paste(..., sep = "", collapse)
 
 - Class: cmd_question
   Output: Let's use paste0(). Now with a great practical example. You have to create three strings for file names ("data01.csv" "data02.csv" "data03.csv"). Do this with paste0 - no need to add other arguments than the elements of the strings you want to create.
-  CorrectAnswer: paste0('data0', 1:3, '.csv')
-  AnswerTests: omnitest(correctExpr='paste0('data0', 1:3, '.csv')')
+  CorrectAnswer: paste0("data0", 1:3, ".csv")
+  AnswerTests: omnitest(correctExpr='paste0("data0", 1:3, ".csv")')
   Hint: You have to combine "data0", 1:3 and ".csv" - try it!
   
 - Class: text
